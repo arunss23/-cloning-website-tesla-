@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    /* background-color: #636161f3; */
+    background-image: url('bg.avif');
+    padding: 0;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #292828;
+    color: #fff;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    margin-right: 50px;
+}
+a:hover{
+    height:90px;
+    width: 170px;
+    background-color: white;
+    color: black;
+    transition: 0.6s;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+main {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+main .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+main .buttons {
+    margin: 20px 0;
+}
+
+main .buttons button {
+    padding: 15px 25px;
+    font-size: 18px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+main .order-btn {
+    background-color: black;
+    color: #fff;
+}
+
+main .demo-btn {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+main .car-images {
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+main .car-images img {
+    max-width: 900px;
+    margin: 0 30px;
+    border-radius: 10px;
+    height: 300px;
+    opacity: 0.9;
+}
+.order-btn:hover{
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+  transition: 0.7s;
+}
+.demo-btn:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+    transition: 0.7s;
+  }
+
+
+@media (max-width: 768px) {
+    main .car-images {
+        flex-direction: column;
+    }
+
+    main .car-images img {
+        margin: 10px 0;
+    }
+}
